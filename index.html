@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convertidor de temperatura.">
+    <meta name="keywords" content="temperatura, convertidor, JavaScript">
+    <meta name="author" content="Nayrelis Rumbos">
+    <title>Convertidor de Temperatura</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <main class="contenedorPrincipal">
+        <h1>Convertidor de Temperatura</h1>
+        <p>Ingresa el valor y elige las unidades:</p>
+
+        <section class="cajaFormulario">
+            <input type="number" id="valorTemperatura" placeholder="0.00">
+            
+            <select id="unidadOrigen">
+                <option value="">De...</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <select id="unidadDestino">
+                <option value="">A...</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <!-- El botón empieza deshabilitado con el atributo disabled -->
+            <button id="botonConvertir" disabled>Convertir</button>
+        </section>
+
+        <p id="resultado"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
